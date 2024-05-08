@@ -38,7 +38,7 @@
 <h3 align="center">Wittgenstein's Tree: Tractatus logico-philosophicus</h3>
 
   <p align="center">
-    Wittgenstein's work is intends to have a tree format -- but written in a linear way. This project will make a website and an app that allows researchers and people who are interested in Wittgenstein to have a better reading experience, and contrast his statements or even add your own connections. 
+    Wittgenstein's intends to expose his philosophical system in a tree form, but written in a linear way. This project will make a website and an app that allows researchers and people who are interested in Wittgenstein to have a better reading experience, and contrast his statements or even add your own connections. 
     <br />
   <p align="center">The ISBN for the version that I use is 978-1839982095 (ISBN 13), and the electronic version for this book is available by JSTOR.
     <br />
