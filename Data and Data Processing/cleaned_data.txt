@@ -194,8 +194,6 @@ or false.
 A logical picture of facts is a thought.
 3.001 ‘a state of affairs is thinkable’: what this means is that we can
 picture it to ourselves.
-893. (01- 05)
-A logical picture of facts is a thought.
 3.01  The totality of true thoughts is a picture of the world.
 3.02  a thought contains the possibility of the situation of which it is
 the thought. What is thinkable is possible too.
@@ -859,8 +857,7 @@ tive ideas objects belonging to a formal concept and the formal
 concept itself. so it is impossible, for example, to introduce
 as primitive ideas both the concept of a function and specific
 functions, as r ussell does; or the concept of a number and par -
-ticular numbers.
-139 existence and non- existence.
+ticular numbers. existence and non- existence.
 of these states of affairs any combinations can exist and the
 remainder not exist.
 4.28  There correspond to these combinations the same number of pos -
