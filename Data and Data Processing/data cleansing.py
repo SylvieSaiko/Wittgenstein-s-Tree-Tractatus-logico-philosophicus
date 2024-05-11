@@ -18,26 +18,25 @@ def clean_text_data(text):
 
     # Patterns
     page_number_pattern = re.compile(r'^\s*(\d+)\s*$')  # Standalone page numbers
-    valid_content_pattern = re.compile(r'^\s*(\d+(\.\d+)*\s+.*)')  # Sequence numbers like 1.1 or 1
     specific_titles_pattern = re.compile(r'^(The Tree of The TracT aTus|TracT aTus Logico-PhiL osoPhicus)$',
                                          re.IGNORECASE | re.MULTILINE)
+    valid_content_pattern = re.compile(r'^\s*(\d+(\.\d+)*\s+.*)')
     blank_line_pattern = re.compile(r'^\s*$')  # Blank lines
-    page_before_sequence_pattern = re.compile(
-        r'(\d{1,3})(\d{1}\.\d+)')  # To capture and separate page numbers before sequences
-
-    last_finish=True
+    page_before_sequence_pattern = re.compile(r'\b(\d{3,4})\.\d+\b') # To capture and separate page numbers before sequences
+    proceed=True
     for line in lines:
         if page_number_pattern.match(line) or blank_line_pattern.match(line) or specific_titles_pattern.match(line):
             continue  # Skip standalone page numbers and blank lines and specific titles
 
         # Process lines to remove page numbers before sequence numbers
-        line = page_before_sequence_pattern.sub(lambda m: m.group(2), line)
-
         if valid_content_pattern.match(line):
-            cleaned_text.append(line)
-            last_finish=False
-        elif last_finish==False:
-            cleaned_text.append(line)
+            proceed=False
+        if page_before_sequence_pattern.match(line):
+            proceed=True
+        if proceed==True:
+            continue
+
+        cleaned_text.append(line)
 
     return '\n'.join(cleaned_text)
 
