@@ -1,13 +1,6 @@
 # Wittgenstein's Tree: Tractatus logico-philosophicus
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 
 
@@ -38,9 +31,9 @@
 <h3 align="center">Wittgenstein's Tree: Tractatus logico-philosophicus</h3>
 
   <p align="center">
-    Wittgenstein intends to expose his philosophical system in a tree form, but written in a linear way. This project will make a website and an app that allows researchers and people who are interested in Wittgenstein to have a better reading experience, and contrast his statements or even add your own connections. 
+    Wittgenstein intended to expose his philosophical system in a tree form, but wrote in a linear way. This project makes a website that allows researchers and people who are interested in Wittgenstein to have a better reading experience, and contrast his statements or even add your own connections. 
     <br />
-  <p align="center">The ISBN for the version that I use is 978-1839982095 (ISBN 13), and the electronic version for this book is available by JSTOR.
+  <p align="center">The ISBN for the version that I use is 978-1839982095 (ISBN 13), and the electronic version for this book is from JSTOR.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
