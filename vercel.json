@@ -2,7 +2,7 @@
   "name": "Wittgenstein's Tree: Tractatus logico philosophicus",
   "description": "A brief description of your project",
   "version": "0.0.1",
-  "main": "./main.js",
+  "main": "Foundation-Sites-CSS/js/app.js",
   "authors": [
     "Guanwen Ding <gding7@emory.edu>"
   ],
