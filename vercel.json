@@ -1,28 +1,14 @@
 {
-  "name": "Wittgenstein's Tree: Tractatus logico philosophicus",
-  "version": "0.0.1",
-  "main": "Foundation-Sites-CSS/js/app.js",
-  "authors": [
-    "Guanwen Ding <gding7@emory.edu>"
+  "builds": [
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
+    }
   ],
-  "license": "MIT",
-  "homepage": "http://www.wittgensteintree.com",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SylvieSaiko/Wittgenstein-s-Tree-Tractatus-logico-philosophicus"
-  },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "^3.5.1",
-    "bootstrap": "^4.5.0"
-  },
-  "devDependencies": {
-    "qunit": "^2.9.3"
-  }
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    }
+  ]
 }
