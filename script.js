@@ -64,7 +64,7 @@ class TreeNode {
 }
 
 async function loadTree() {
-    const response = await fetch('The tree.txt');
+    const response = await fetch('The tree 1.txt');
     const text = await response.text();
     const root = TreeNode.fromText(text);
     console.log('Root node:', root); // Debugging: log the root node
