@@ -18,7 +18,7 @@
       }
       .tree {
           position: absolute;
-          bottom: 10px; /* Adjust as needed to give space for the root node */
+          bottom: 50px; /* Adjust as needed to give space for the root node */
           left: 50%;
           transform: translateX(-50%);
       }
@@ -44,12 +44,19 @@
           width: 100%;
           text-align: center;
       }
+      #separator {
+          background-color: #000;
+          height: 5px;
+          cursor: row-resize;
+          z-index: 1;
+      }
+      
   </style>
 </head>
 <body>
   <div class="tree" id="tree"></div>
+  <div id="separator"></div>
   <div id="content">Select a node to see the content here</div>
-
   <script src="script.js"></script>
 </body>
 </html>
