@@ -11,26 +11,31 @@ class TreeNode {
 
     static fromText(text) {
         const lines = text.trim().split('\n');
-        const nodes = [];
+        const root = new TreeNode("0", "Tractatus logico philosophicus");
+        const nodeStack = [root];
+        let prevIndentation = 0;
 
-        for (const line of lines) {
-            const level = line.search(/\S/); // Calculate the indentation level
+        lines.forEach(line => {
+            const indentation = line.search(/\S/);
             const [sequence, ...dataParts] = line.trim().split(/\s+/);
             const data = dataParts.join(' ');
             const node = new TreeNode(sequence, data);
 
-            if (level === 0) {
-                nodes.push(node);
+            if (indentation > prevIndentation) {
+                nodeStack[nodeStack.length - 1].addChild(node);
             } else {
-                let parent = nodes[nodes.length - 1];
-                for (let i = 0; i < level / 2; i++) {
-                    parent = parent.children[parent.children.length - 1];
+                while (indentation <= nodeStack[nodeStack.length - 1].indentation) {
+                    nodeStack.pop();
                 }
-                parent.addChild(node);
+                nodeStack[nodeStack.length - 1].addChild(node);
             }
-        }
 
-        return nodes[0];
+            node.indentation = indentation;
+            nodeStack.push(node);
+            prevIndentation = indentation;
+        });
+
+        return root;
     }
 
     toHTML() {
@@ -59,9 +64,10 @@ class TreeNode {
 }
 
 async function loadTree() {
-    const response = await fetch('The tree.txt');
+    const response = await fetch('The tree 1.txt');
     const text = await response.text();
     const root = TreeNode.fromText(text);
+    console.log('Root node:', root); // Debugging: log the root node
     const treeElement = document.getElementById('tree');
     treeElement.appendChild(root.toHTML());
 }
