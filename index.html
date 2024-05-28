@@ -7,13 +7,22 @@
     <meta name="keywords" content="keyword1, keyword2, keyword3">
     <meta name="author" content="SylvieSaiko">
     <title>Wittgenstein's tree</title>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+      .tree ul {
+          list-style-type: none;
+          display: none;
+      }
+      .tree .node {
+          cursor: pointer;
+      }
+      .tree .node.expanded > ul {
+          display: block;
+      }
+  </style>
   </head>
-<body>
-  <div id="chart"></div>
+  <body>
+    <div class="tree" id="tree"></div>
+
     <script src="script.js"></script>
-   <div id="content">
-    
-   </div>
-  </body>
+</body>
 </html>
