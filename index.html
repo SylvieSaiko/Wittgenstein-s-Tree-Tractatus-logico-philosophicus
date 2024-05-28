@@ -8,21 +8,48 @@
     <meta name="author" content="SylvieSaiko">
     <title>Wittgenstein's tree</title>
     <style>
+      body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          position: relative;
+      }
+      .tree {
+          position: absolute;
+          bottom: 10px; /* Adjust as needed to give space for the root node */
+          left: 50%;
+          transform: translateX(-50%);
+      }
       .tree ul {
           list-style-type: none;
           display: none;
+          margin: 0;
+          padding: 0;
       }
       .tree .node {
           cursor: pointer;
+          text-align: center;
+          margin: 0;
+          padding: 0;
       }
       .tree .node.expanded > ul {
           display: block;
       }
+      #content {
+          margin-top: 20px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          width: 100%;
+          text-align: center;
+      }
   </style>
-  </head>
-  <body>
-    <div class="tree" id="tree"></div>
+</head>
+<body>
+  <div class="tree" id="tree"></div>
+  <div id="content">Select a node to see the content here</div>
 
-    <script src="script.js"></script>
+  <script src="tree.js"></script>
 </body>
 </html>
