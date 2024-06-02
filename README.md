@@ -31,7 +31,7 @@
 <h3 align="center">Wittgenstein's Tree: Tractatus logico-philosophicus</h3>
 
   <p align="center">
-    Wittgenstein intended to expose his philosophical system in a tree form, but wrote in a linear way. This project makes a website that allows researchers and people who are interested in Wittgenstein to have a better reading experience, and contrast his statements or even add your own connections. The numbering system in Wittgenstein's work is also seen in MIT's course numbers(take a look at <a href="https://catalog.mit.edu/subjects/8/"><strong> MIT physics course atlas</strong></a>)
+    Wittgenstein intended to expose his philosophical system in a tree form, but wrote in a linear way. This project makes a website that allows researchers and people who are interested in Wittgenstein to have a better reading experience, and contrast his statements or even add your own connections. The numbering system in Wittgenstein's work is also seen in MIT's course numbers(take a look at <a href="https://catalog.mit.edu/subjects/8/"><strong> MIT physics course atlas</strong></a>), which I would consider a beautiful coincidence.
     <br />
   <p align="center">The ISBN for the version that I use is 978-1839982095 (ISBN 13), and the electronic version for this book is from JSTOR.
     <br />
